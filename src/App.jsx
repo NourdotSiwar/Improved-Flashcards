@@ -46,9 +46,9 @@ const App = () => {
   } 
   
   // this is useState of previousCard and setPreviousCard to keep track of previous card
-  const [previousCard, setPreviousCard] = React.useState(0);
+  const [previousCard, setPreviousCard] = React.useState(nextCard);
   const formerCard = () => { 
-    setPreviousCard(previousCard - 1); 
+    setNextCard(nextCard - 1);
     setGuess('');
     setIsCorrect('');
     setIsDisabled(false);
